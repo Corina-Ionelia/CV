@@ -8,7 +8,7 @@
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+  background: linear-gradient(to right, #64d2f0, #1a74e3);
   color: #fff;
   overflow-x: hidden;
   position: relative;
@@ -16,7 +16,7 @@ body {
 
 /* Stilizare header și navigație */
 header {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 5, 0, 0.8);
   color: #fff;
   padding: 1rem 2rem;
   position: fixed;
@@ -155,6 +155,15 @@ footer {
 
 #about {
   display: block; /* Asigură-te că elementul este afișat */
-  visibility: visible; /* Asigură-te că elementul este vizibil */
+  visibility: visible;
+  background-color: #e1d7d1; /* Asigură-te că elementul este vizibil */
+  color: #333;
   /* Alte stiluri */
+}
+
+#about h2,
+#about p,
+#about ul,
+#about li {
+  color: #333; /* Culoare text negru deschis */
 }
