@@ -152,3 +152,9 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
 }
+
+#about {
+  display: block; /* Asigură-te că elementul este afișat */
+  visibility: visible; /* Asigură-te că elementul este vizibil */
+  /* Alte stiluri */
+}
