@@ -46,7 +46,7 @@ header h1 {
   cursor: pointer;
   font-size: 28px;
   position: absolute;
-  top: 20px;
+  top: 30px; /* Puțin mai jos față de header pentru a nu acoperi numele */
   right: 20px;
   border-radius: 50%;
   z-index: 20;
@@ -64,7 +64,7 @@ header h1 {
   align-items: flex-end;
   background: #00796b; /* Fundal marin pentru meniul deschis */
   position: absolute;
-  top: 70px; /* Sub header */
+  top: 80px; /* Sub header */
   right: 0;
   width: 250px; /* Lățimea meniului burger */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
