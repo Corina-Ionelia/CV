@@ -4,181 +4,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corina-Ionelia Gavrila - CV</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>Corina-Ionelia Gavrila - Junior Full Stack Developer & QA Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Header cu navigație -->
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Corina-Ionelia Gavrila</h1>
-                <p>Galati</p>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">Despre Mine</a></li>
-                <li><a href="#skills">Aptitudini</a></li>
-                <li><a href="#experience">Experiență</a></li>
-                <li><a href="#education">Studii</a></li>
-                <li><a href="#projects">Proiecte</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
+        <div class="container">
+            <h1>Corina-Ionelia Gavrila</h1>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav id="menu" class="menu">
+                <a href="#about">Despre Mine</a>
+                <a href="#projects">Proiecte</a>
+                <a href="#studies">Studii</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
-    <!-- Secțiunea Despre Mine -->
 
-    <!-- Secțiunea Despre Mine -->
-    <section id="about" class="about">
-        <h2>Despre Mine</h2>
-        <p>Dynamic Junior Full Stack Developer & QA Engineer, passionate about creating engaging web experiences and
-            ensuring software quality.</p>
-        <h3>Technical Skills:</h3>
-        <ul>
-            <li><strong>Languages & Frameworks:</strong> JavaScript, React, Node.js, HTML5, CSS3</li>
-            <li><strong>Tools:</strong> Git, Visual Studio Code, Postman, TestRail, Jira, Qase, Trello, SQL, JSON, XML
-            </li>
-        </ul>
-        <h3>Experience:</h3>
-        <h4>Web Development:</h4>
-        <ul>
-            <li>Developed responsive web applications using modern technologies like JavaScript, React, Node.js, HTML,
-                and CSS.</li>
-            <li>Ensured the successful delivery of projects by following Agile methodologies, promoting continuous
-                improvement.
-            </li>
-            <li>Collaborated with cross-functional teams to translate requirements into scalable solutions.</li>
-        </ul>
-        <h4>QA Testing:</h4>
-        <ul>
-            <li>Conducted various types of testing: Component, Acceptance, Dynamic, Static, Regression.</li>
-            <li>Identified defects, ensured compliance with standards, and effectively communicated findings to
-                stakeholders.
-            </li>
-            <li>Created and executed test plans, monitored test progress, and maintained test coverage.</li>
-        </ul>
-        <h3>Career Objectives:</h3>
-        <ul>
-            <li>Actively seeking new challenges and career opportunities in the tech industry.</li>
-            <li>Eager to leverage my skills to contribute to innovative projects and drive business success.</li>
-            <li>Open to connecting with recruiters and exploring potential collaborations and job prospects.</li>
-        </ul>
-    </section>
+    <main>
+        <section id="about" class="content">
+            <h2>Despre Mine</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>🚀 Dynamic Junior Full Stack Developer & QA Engineer</h3>
+                    <p>Passionate about creating engaging web experiences and ensuring software quality.</p>
+                </div>
+                <div class="card">
+                    <h3>🔧 Technical Skills:</h3>
+                    <ul>
+                        <li>Languages & Frameworks: JavaScript, React, Node.js, HTML5, CSS3</li>
+                        <li>Tools: Git, Visual Studio Code, Postman, TestRail, Jira, Qase, Trello, SQL, JSON, XML</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>💼 Experience:</h3>
+                    <h4>Web Development:</h4>
+                    <ul>
+                        <li>Developed responsive web applications using modern technologies like JavaScript, React,
+                            Node.js, HTML, and CSS.</li>
+                        <li>Ensured the successful delivery of projects by following Agile methodologies, promoting
+                            continuous improvement.</li>
+                        <li>Collaborated with cross-functional teams to translate requirements into scalable solutions.
+                        </li>
+                    </ul>
+                    <h4>QA Testing:</h4>
+                    <ul>
+                        <li>Conducted various types of testing: Component, Acceptance, Dynamic, Static, Regression.</li>
+                        <li>Identified defects, ensured compliance with standards, and effectively communicated findings
+                            to stakeholders.</li>
+                        <li>Created and executed test plans, monitored test progress, and maintained test coverage.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🎯 Career Objectives:</h3>
+                    <ul>
+                        <li>Actively seeking new challenges and career opportunities in the tech industry.</li>
+                        <li>Eager to leverage my skills to contribute to innovative projects and drive business success.
+                        </li>
+                        <li>Open to connecting with recruiters and exploring potential collaborations and job prospects.
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>📞 Let's Connect:</h3>
+                    <p>Interested in discussing potential opportunities or collaborations? Feel free to reach out! Open
+                        to networking and connecting with like-minded professionals in the tech community.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Secțiunea Aptitudini -->
-    <section id="skills" class="skills">
-        <h2>Aptitudini Principale</h2>
-        <ul>
-            <li>Dezvoltare Web</li>
-            <li>Design UI/UX</li>
-            <li>Software Project Management</li>
-            <li>Limbi: Română, Engleză</li>
-        </ul>
-    </section>
+        <section id="projects" class="content">
+            <h2>Proiecte</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>WebStudio - HTML5 & CSS3</h3>
+                    <a href="https://corina-ionelia.github.io/goit-markup-hw-07/" target="_blank"
+                        class="card-link">Vizualizează proiectul</a>
+                    <p>I am a passionate Frontend Developer with experience in HTML5 and CSS3, specializing in creating
+                        responsive, user-friendly web interfaces. My latest project showcases a modern, professional web
+                        studio website featuring clean design,
+                        organized structure, and attention to detail.</p>
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>Responsive Web Design</li>
+                        <li>Git & Version Control</li>
+                        <li>Cross-browser Compatibility</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Group Project - Responsive Ice Cream Website</h3>
+                    <a href="https://miro-wq.github.io/team2-new-icecream/" target="_blank"
+                        class="card-link">Vizualizează proiectul</a>
+                    <p>As part of a collaborative team, I contributed to developing a fully responsive website for an
+                        ice cream brand, focusing on clean, semantic HTML and modular SCSS. We ensured the site was
+                        optimized for mobile, tablet, and desktop views,
+                        incorporating Retina-ready images and adhering to web standards.</p>
+                    <h4>Technical Skills:</h4>
+                    <ul>
+                        <li>Responsive Web Design</li>
+                        <li>HTML5 & SCSS</li>
+                        <li>Version Control (Git)</li>
+                        <li>Web Performance Optimization</li>
+                        <li>Cross-browser Compatibility</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Group Project - JavaScript-Powered Responsive Website</h3>
+                    <a href="https://simonacatrini.github.io/ECHIPA3/" target="_blank" class="card-link">Vizualizează
+                        proiectul</a>
+                    <p>In a dynamic team, I helped develop a responsive website using JavaScript, focusing on best
+                        coding practices. The project involved adapting the layout for mobile, tablet, and desktop
+                        devices, ensuring semantic HTML and optimized image
+                        handling.</p>
+                    <h4>Technical Skills:</h4>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Responsive Web Design</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Parcel Bundler</li>
+                        <li>Git & Version Control</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>JS Tasker - Task Management Web Application</h3>
+                    <a href="https://corina-ionelia.github.io/JS-Tasker/" target="_blank" class="card-link">Vizualizează
+                        proiectul</a>
+                    <p>JS Tasker is a task management web application that I developed to enhance productivity by
+                        allowing users to create, organize, and manage their tasks efficiently. Built with JavaScript,
+                        HTML5, and CSS3, the app features a clean, responsive
+                        design.</p>
+                    <h4>Technical Skills:</h4>
+                    <ul>
+                        <li>JavaScript (DOM Manipulation)</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Responsive Web Design</li>
+                        <li>Web Performance Optimization</li>
+                        <li>Git & Version Control</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>RGB-HEX Color Conversion Tool</h3>
+                    <a href="https://corina-ionelia.github.io/CuloareaRGB-HEX/" target="_blank"
+                        class="card-link">Vizualizează proiectul</a>
+                    <p>This web page is a tool designed to facilitate the conversion between RGB and HEX color formats.
+                        It allows users to convert RGB values to HEX and vice versa.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Simple and user-friendly interface</li>
+                        <li>Quick and easy conversion</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>E-Sport Hub</h3>
+                    <a href="https://corina-ionelia.github.io/E-sport/" target="_blank" class="card-link">Vizualizează
+                        proiectul</a>
+                    <p>Welcome to the E-Sport Hub, your go-to resource for everything related to the world of electronic
+                        sports. This page offers comprehensive information and insights into various aspects of
+                        e-sports, including news, updates, and resources.</p>
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Latest News</li>
+                        <li>Event Coverage</li>
+                        <li>Player Profiles</li>
+                        <li>Team Information</li>
+                        <li>Resource Links</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- Secțiunea Experiență -->
-    <section id="experience" class="experience">
-        <h2>Experiență</h2>
-        <div class="job">
-            <h3>GoIT România - Student</h3>
-            <p>August 2024 - August 2024 (1 lună)</p>
-            <p>The JavaScript project was completed according to the specific technical requirements:</p>
-            <ul>
-                <li>Responsive Design: The layout is optimized for mobile devices, tablets, and desktops.</li>
-                <li>Modern Normalization: The use of modern-normalize ensures consistent styling.</li>
-                <li>HTML Validation: All HTML files are validated through validator.w3.org.</li>
-                <li>Correct Naming Conventions: Files are named without capital letters and spaces, adhering to naming
-                    conventions.
-                </li>
-                <li>Code Compliance: Variables are in camelCase, classes are in PascalCase, and constants are in
-                    UPPER_SNAKE_CASE.
-                </li>
-                <li>Console Cleanliness: There are no errors or console logs in the developer console.</li>
-                <li>Parcel Build: The project was built using Parcel according to the instructions.</li>
-                <li>File Structuring: Folders and files follow the recommended structure and the team lead's
-                    instructions.
-                </li>
-                <li>Final Deployment: The project is live on GitHub Pages or Netlify; optionally, it may be deployed on
-                    a dedicated server.</li>
-                <li>Branch Management: Working branches, except for the essential ones (main, gh-pages), have been
-                    deleted.
-                </li>
-                <li>Image Optimization: Images are optimized for Retina displays.</li>
-                <li>Code Review: The final version of the code has been reviewed by the mentor.</li>
-            </ul>
-            <a href="https://simonacatrini.github.io/ECHIPA3/" target="_blank">Proiecte</a>
-        </div>
-        <div class="job">
-            <h3>S.C. Crama Bratu S.R.L - Laborant</h3>
-            <p>Iulie 2022 - Iulie 2024 (2 ani 1 lună)</p>
-            <p>Galați, România</p>
-        </div>
-    </section>
+        <section id="studies" class="content">
+            <h2>Studii</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>GoIT - Start Your Career</h3>
+                    <p>Fullstack Developer</p>
+                    <ul>
+                        <li>HTML si CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>React Native</li>
+                        <li>Soft skills</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Universitatea „Dunărea de Jos” din Galați</h3>
+                    <p>Ingineria produselor alimentare</p>
+                    <p>Știința și Ingineria produselor alimentare (2018 - 2022)</p>
+                </div>
+                <div class="card">
+                    <h3>Universitatea „Dunărea de Jos” din Galați</h3>
+                    <p>Curs Antreprenoriat</p>
+                    <p>Antreprenoriat / Studii de antreprenoriat (2020 - 2021)</p>
+                </div>
+                <div class="card">
+                    <h3>Universitatea „Dunărea de Jos” din Galați</h3>
+                    <p>Psihopetagogie Nivel 1</p>
+                    <p>DPPD (2018 - 2021)</p>
+                </div>
+                <div class="card">
+                    <h3>Colegiul Tehnic "Valeriu D. Cotea"</h3>
+                    <p>Tehnician Cadastru Funciar Topograf - nivel 5 (2017 - 2019)</p>
+                </div>
+                <div class="card">
+                    <h3>Colegiul Tehnic "Valeriu D. Cotea"</h3>
+                    <p>Tehnician Analiza Produselor Alimentare - nivel 4 (2013 - 2017)</p>
+                </div>
+                <div class="card">
+                    <h3>Colegiul Național Valeriu D. Cotea</h3>
+                    <p>Pstliceala Tehnician Cadastru Funciar Topograf, Tehnologie desen tehnic/design CAD/CADD /
+                        Tehnician
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Secțiunea Studii -->
-    <section id="education" class="education">
-        <h2>Studii</h2>
-        <div class="degree">
-            <h3>GoIT - Start your career in IT</h3>
-            <p>Fullstack Developer, IT (Ianuarie 2024 - Octombrie 2024)</p>
-        </div>
-        <div class="degree">
-            <h3>Universitatea „Dunărea de Jos” din Galați</h3>
-            <ul>
-                <li>2022 - 2024: Masterat - Facultate de Știința și Ingineria Alimentelor, Galati</li>
-                <li>2022 - 2024: Masterat - Dunărea de Jos, Departamentul pentru Pregătirea Personalului Didactic -
-                    Gradul didactic II, Galati</li>
-                <li>2018 - 2022: Facultate - Universitatea "Dunărea de Jos", Știința și Ingineria Alimentelor, Galati
-                </li>
-            </ul>
-        </div>
-    </section>
+        <section id="contact" class="content">
+            <h2>Contact</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>E-mail</h3>
+                    <a href="mailto:corynaionelia@gmail.com" class="card-link">corynaionelia@gmail.com</a>
+                </div>
+                <div class="card">
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/Corina-Ionelia" target="_blank"
+                        class="card-link">github.com/Corina-Ionelia</a>
+                </div>
+                <div class="card">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/corina-gavrila/" target="_blank"
+                        class="card-link">linkedin.com/in/corina-gavrila</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- Secțiunea Proiecte -->
-    <section id="projects" class="projects">
-        <h2>Proiecte</h2>
-        <div class="project-card">
-            <h3>Proiect JavaScript</h3>
-            <a href="https://simonacatrini.github.io/ECHIPA3/" target="_blank">Proiecte</a>
-            <p>The JavaScript project was completed according to the specific technical requirements: Responsive Design:
-                The layout is optimized for mobile devices, tablets, and desktops. Modern Normalization: The use of
-                modern-normalize ensures consistent
-                styling. HTML Validation: All HTML files are validated through validator.w3.org. Correct Naming
-                Conventions: Files are named without capital letters and spaces, adhering to naming conventions. Code
-                Compliance: Variables are in camelCase,
-                classes are in PascalCase, and constants are in UPPER_SNAKE_CASE. Console Cleanliness: There are no
-                errors or console logs in the developer console. Parcel Build: The project was built using Parcel
-                according to the instructions. File Structuring:
-                Folders and files follow the recommended structure and the team lead's instructions. Final Deployment:
-                The project is live on GitHub Pages or Netlify; optionally, it may be deployed on a dedicated server.
-                Branch Management: Working branches,
-                except for the essential ones (main, gh-pages), have been deleted. Image Optimization: Images are
-                optimized for Retina displays. Code Review: The final version of the code has been reviewed by the
-                mentor.</p>
-        </div>
-    </section>
-
-    <!-- Secțiunea Contact -->
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <ul>
-            <li><a href="mailto:corynaionelia@gmail.com">Email</a></li>
-            <li><a href="https://github.com/Corina-Ionelia" target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/corina-gavrila" target="_blank">LinkedIn</a></li>
-            <li><a href="tel:+40765483398">Telefon</a></li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Corina-Ionelia Gavrila. Toate drepturile rezervate.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
